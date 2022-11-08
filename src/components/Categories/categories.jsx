@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import List from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
+
 import ListItem from '@mui/material/ListItem';
 
 
@@ -10,7 +10,7 @@ function Categories(props)
     <List>
       { props.categories.map((category, idx) => (
         <ListItem key={ idx }>
-          { category }
+          { category.display }
         </ListItem>
       )) }
     </List>
