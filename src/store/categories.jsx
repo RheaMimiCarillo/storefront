@@ -16,6 +16,9 @@ const initialState = {
       description: 'Like pies, but spicier',
     },
   ],
+  products:[
+    
+  ],
   activeCategory: {
     normalized: 'PIES',
     display: 'Pies',
@@ -45,7 +48,7 @@ const categoryReducer = (state = initialState, action) =>
           // might do something in here later
           return category
         }),
-        activeCategory: state.categories.filter((category)=> category.normalized===action.payload)
+        activeCategory: state.categories.find((category)=> category.normalized===action.payload)
       };
     default:
       return state;

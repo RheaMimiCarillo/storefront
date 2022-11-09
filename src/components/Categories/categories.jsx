@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
-import List from '@mui/material/ListItem';
-
-import ListItem from '@mui/material/ListItem';
+import { chooseCategory } from '../../store/categories'
+import { List, ListItem, ListItemButton } from '@mui/material';
 
 
 function Categories(props)
@@ -10,7 +9,9 @@ function Categories(props)
     <List>
       { props.categories.map((category, idx) => (
         <ListItem key={ idx }>
-          { category.display }
+          <ListItemButton onClick={ () => props.chooseCategory(category.normalized) }>
+            { category.display }
+          </ListItemButton>
         </ListItem>
       )) }
     </List>
@@ -22,4 +23,9 @@ const mapStateToProps = (state) => ({
   categories: state.categories,
   activeCategory: state.activeCategory,
 });
-export default connect(mapStateToProps)(Categories);
+
+const mapDispatchToProps =
+{
+  chooseCategory,
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Categories);

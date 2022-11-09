@@ -1,9 +1,28 @@
+import { Box, Typography } from '@mui/material/';
+import Copyright from "./copyright";
+import './footer.scss';
+
 function Footer(props)
 {
   return (
-    <footer>
-      <p><a href="https://github.com/RheaMimiCarillo">© Rhea Mimi Carillo 2022</a></p>
-    </footer>
+    <Box component="footer">
+      <Typography
+        variant="h6"
+        align="center"
+        gutterBottom
+      >
+        You're my best friend
+      </Typography>
+      <Typography
+        variant="subtitle1"
+        align="center"
+        color="text.secondary"
+        component="p"
+      >
+        Thanks for coming!
+      </Typography>
+      <Copyright />
+    </Box>
   )
 }
 
