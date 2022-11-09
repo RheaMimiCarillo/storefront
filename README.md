@@ -42,7 +42,6 @@ My test suite uses [RTL](https://testing-library.com/docs/react-testing-library/
 3. Displays components using Material UI
   - a test for if my custom theme is applying to a sample <Button>
 
-
 ## References
 
 1. [target="_blank" rel="noopener noreferrer" safety](https://stackoverflow.com/a/50709724)

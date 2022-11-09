@@ -1,12 +1,14 @@
 import Categories from "../Categories/categories";
+import Hero from "./Hero/hero";
 
 import './main.scss';
 
 function Main(props)
 {
-  return(
+  return (
     <main className="main">
-      <Categories/>
+      <Hero />
+      <Categories />
     </main>
   )
 }
