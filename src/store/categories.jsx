@@ -16,8 +16,35 @@ const initialState = {
       description: 'Like pies, but spicier',
     },
   ],
-  products:[
-    
+  products: [
+    {
+      category: 'PIES',
+      name: 'Chicken Pot Pie',
+      description: 'Filled with potassium',
+      price: 50,
+      inventory_count: 1
+    },
+    {
+      category: 'LIES',
+      name: 'Little White (lie)',
+      description: 'Never hurt anyone',
+      price: 0,
+      inventory_count: 9999
+    },
+    {
+      category: 'SPIES',
+      name: 'James Bond',
+      description: 'License to Kill',
+      price: 10000,
+      inventory_count: 5
+    },
+    {
+      category: 'SPIES',
+      name: 'Austin Powers',
+      description: 'Yeah, Baby!',
+      price: 1000000,
+      inventory_count: 1
+    }
   ],
   activeCategory: {
     normalized: 'PIES',
@@ -42,13 +69,14 @@ const categoryReducer = (state = initialState, action) =>
   {
     case 'CATEGORY':
       return {
-        // map state to return initial state of categories
-        categories: state.categories.map((category) =>
-        {
-          // might do something in here later
-          return category
-        }),
-        activeCategory: state.categories.find((category)=> category.normalized===action.payload)
+        ...state,
+        // // map state to return initial state of categories
+        // categories: state.categories.map((category) =>
+        // {
+        //   // might do something in here later
+        //   return category
+        // }),
+        activeCategory: state.categories.find((category) => category.normalized === action.payload)
       };
     default:
       return state;

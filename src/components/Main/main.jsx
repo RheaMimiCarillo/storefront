@@ -1,4 +1,5 @@
 import Categories from "../Categories/categories";
+import Products from '../Products/products';
 import Hero from "./Hero/hero";
 
 import './main.scss';
@@ -9,6 +10,7 @@ function Main(props)
     <main className="main">
       <Hero />
       <Categories />
+      <Products/>
     </main>
   )
 }

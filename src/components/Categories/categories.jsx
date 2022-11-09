@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import { chooseCategory } from '../../store/categories'
 import { List, ListItem, ListItemButton } from '@mui/material';
 
-
 function Categories(props)
 {
   return (
