@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { Button, Stack, Box, Typography, Container } from '@mui/material/';
+import { Box, Typography, Container } from '@mui/material/';
 
 
 function ActiveCategory(props)
@@ -19,7 +19,7 @@ function ActiveCategory(props)
           color="text.primary"
           gutterBottom
         >
-          {props.activeCategory.display}
+          { props.activeCategory.display }
         </Typography>
         <Typography
           variant="h5"
@@ -27,7 +27,7 @@ function ActiveCategory(props)
           color="text.secondary"
           paragraph
         >
-          {props.activeCategory.description}
+          { props.activeCategory.description }
         </Typography>
       </Container>
     </Box>
