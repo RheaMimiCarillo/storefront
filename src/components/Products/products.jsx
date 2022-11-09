@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 
 function Products(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div>
       {props.products.filter(product =>
         product.category === props.activeCategory.normalized
-      ).map(product => <p>{product.name}</p>)}
+      ).map((product, idx) => <p key={idx}>{product.name}</p>)}
     </div>
   );
 }
