@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { chooseCategory } from '../../store/categories'
-import {  Card, CardContent, CardMedia, Grid, Typography, Container, CardActionArea } from '@mui/material';
+import { Card, CardContent, CardMedia, Grid, Typography, Container, CardActionArea } from '@mui/material';
 
 function Categories(props)
 {
@@ -13,7 +13,7 @@ function Categories(props)
         <Grid container spacing={ 4 }>
           { props.categories.map((category, idx) =>
             <Grid item key={ idx } xs={ 12 } sm={ 6 } md={ 4 }>
-              <CardActionArea>
+              <CardActionArea onClick={ () => props.chooseCategory(category.normalized) }>
                 <Card
                   sx={ {
                     height: '100%',

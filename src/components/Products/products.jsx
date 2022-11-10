@@ -11,7 +11,7 @@ import Container from '@mui/material/Container';
 function Products(props)
 {
   return (
-    <Container sx={ { py: 8 } } maxWidth="md">
+    <Container sx={ { py: 8 } } maxWidth="lg">
       <Grid container spacing={ 4 }>
         { props.products.filter(product =>
           product.category === props.activeCategory.normalized
