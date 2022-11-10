@@ -9,8 +9,9 @@ import { Divider } from '@mui/material/'
 
 function Header(props)
 {
+  const drawerWidth = 240;
   return (
-    <AppBar position="relative">
+    <AppBar position="relative" sx={ { width: `calc(100% - ${ drawerWidth }px)`, mr: `${ drawerWidth }px` } }>
       <Toolbar>
         <ShopIcon sx={ { mr: 2 } } />
         <Divider orientation='vertical'/>

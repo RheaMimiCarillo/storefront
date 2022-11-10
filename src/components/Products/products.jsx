@@ -39,7 +39,7 @@ function Products(props)
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">View</Button>
+                <Button size="small" disabled={true}>View</Button>
                 <Button size="small">Add to cart</Button>
               </CardActions>
             </Card>

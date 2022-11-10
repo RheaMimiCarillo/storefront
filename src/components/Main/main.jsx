@@ -3,6 +3,8 @@ import ActiveCategory from '../Categories/ActiveCategory/activeCategory';
 import Products from '../Products/products';
 import Hero from "./Hero/hero";
 
+import PermanentDrawerRight from '../Cart/simpleCart'
+
 import './main.scss';
 
 function Main(props)
@@ -13,6 +15,7 @@ function Main(props)
       <Categories />
       <ActiveCategory/>
       <Products/>
+      <PermanentDrawerRight />
     </main>
   )
 }
