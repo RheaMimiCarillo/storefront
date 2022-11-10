@@ -1,0 +1,1 @@
+/* simple cart will be a list of unique item names in the cart */

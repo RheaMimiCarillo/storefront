@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { chooseCategory } from '../../store/categories'
-import { List, ListItem, ListItemButton, Button, Card, CardActions, CardContent, CardMedia, Grid, Typography, Container, CardActionArea } from '@mui/material';
+import {  Card, CardContent, CardMedia, Grid, Typography, Container, CardActionArea } from '@mui/material';
 
 function Categories(props)
 {
