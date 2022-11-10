@@ -1,3 +1,10 @@
+/* TODO
+  X update logic to make app render with products store with a combined reducer
+  X add cart store
+    X add cart logic to add products to cart
+    X update quick-view and cart badge in nav to reflect the current items and quantity in cart
+*/
+
 const initialState = {
   products: [
     {
@@ -5,28 +12,32 @@ const initialState = {
       name: 'Chicken Pot Pie',
       description: 'Filled with potassium',
       price: 50,
-      inventory_count: 1
+      inventory_count: 1,
+      image: '/images/pies/chicken_pot_pie.jpg'
     },
     {
       category: 'LIES',
       name: 'Little White (lie)',
       description: 'Never hurt anyone',
       price: 0,
-      inventory_count: 9999
+      inventory_count: 9999,
+      image: '/images/lies/little_white_lie.jpg'
     },
     {
       category: 'SPIES',
       name: 'James Bond',
       description: 'License to Kill',
       price: 10000,
-      inventory_count: 5
+      inventory_count: 5,
+      image: '/images/spies/james_bond.jpg'
     },
     {
       category: 'SPIES',
       name: 'Austin Powers',
       description: 'Yeah, Baby!',
       price: 1000000,
-      inventory_count: 1
+      inventory_count: 1,
+      image: '/images/spies/austin_powers.jpg'
     }
   ],
 }
@@ -52,7 +63,6 @@ const productReducer = (state = initialState, action) =>
     case 'ADD_TO_CART':
       return {
         ...state,
-        
       }
     default:
       return state;
