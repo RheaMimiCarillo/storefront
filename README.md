@@ -12,7 +12,7 @@ Development and testing
 
 ### UML
 
-![Virtual Storefront](./images/virtual_storefront_UML.png "Virtual Storefront")
+![Virtual Storefront](./public/images/virtual_storefront_UML.png "Virtual Storefront")
 
 [Virtual Storefront Whiteboard](https://projects.invisionapp.com/freehand/document/jLBOQqZE5)
 
