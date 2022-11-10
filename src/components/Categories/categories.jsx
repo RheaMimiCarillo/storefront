@@ -12,28 +12,27 @@ function Categories(props)
         </Typography>
         <Grid container spacing={ 4 }>
           { props.categories.map((category, idx) =>
-            <Grid item key={ idx } xs={ 12 } sm={ 6 } md={ 4 }>
+            <Grid item key={ idx } xs={ 12 } sm={ 6 } md={ 4 } sx={ { display: 'flex' } } >
               <CardActionArea onClick={ () => props.chooseCategory(category.normalized) }>
                 <Card
                   sx={ {
                     height: '100%',
                     display: 'flex',
-                    flexDirection: 'column'
+                    flexDirection: 'column',
+                    justifyContent: 'space-between'
                   } }
                 >
                   <CardContent sx={ { flexGrow: 1 } }>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography variant="h5" component="h2">
                       { category.display }
                     </Typography>
+
                   </CardContent>
                   <CardMedia
                     component="img"
-                    sx={ {
-                      // 16:9
-                      pt: '56.25%',
-                    } }
                     image={ category.image }
                     alt={ category.display }
+                    sx={{height: '100%'}}
                   />
                 </Card>
               </CardActionArea>

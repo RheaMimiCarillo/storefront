@@ -26,10 +26,7 @@ function Products(props)
             >
               <CardMedia
                 component="img"
-                sx={ {
-                  // 16:9
-                  pt: '56.25%',
-                } }
+                sx={{height: '100%'}}
                 image={ product.image }
                 alt={ product.name }
               />
