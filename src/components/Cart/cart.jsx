@@ -1,6 +1,6 @@
 /* Full-sized cart will be a <Drawer> */
 import * as React from 'react';
-import {useState} from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -15,26 +15,19 @@ import MailIcon from '@mui/icons-material/Mail';
 
 function Cart()
 {
-  const [ state, setState ] = useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
+  const [ isOpen, setIsOpen ] = useState(false);
 
-  const toggleDrawer = (anchor, open) => (event) =>
+  const toggleDrawer = () =>
   {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift'))
-    {
-      return;
-    }
-
-    setState({ ...state, [ anchor ]: open });
+    setIsOpen(!isOpen);
   };
 
+  /* TODO
+    refactor `list` to be a rendering of products in the cart
+  */
   const list = (anchor) => (
     <Box
-      sx={ { width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 } }
+      sx={ { width: 250 } }
       role="presentation"
       onClick={ toggleDrawer(anchor, false) }
       onKeyDown={ toggleDrawer(anchor, false) }

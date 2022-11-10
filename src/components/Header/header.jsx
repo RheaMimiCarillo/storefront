@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import ThemeButton from './ThemeButton/themeButton';
 import CartButton from './ShoppingCartButton/cartButton';
 import './header.scss';
+import {Divider} from './@mui/material/'
 
 function Header(props)
 {
@@ -12,6 +13,7 @@ function Header(props)
     <AppBar position="relative">
       <Toolbar>
         <ShopIcon sx={ { mr: 2 } } />
+        <Divider />
         <Typography
           variant="h6"
           color="inherit"
