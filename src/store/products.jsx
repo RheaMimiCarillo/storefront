@@ -3,6 +3,8 @@
   X add cart store
     X add cart logic to add products to cart
     X update quick-view and cart badge in nav to reflect the current items and quantity in cart
+    X disable `add to cart` button when inventory is empty
+      X add bounce/screen shake to that element, so the user knows
 */
 
 const initialState = {
