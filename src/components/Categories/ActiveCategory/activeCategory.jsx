@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import { Box, Typography, Container } from '@mui/material/';
 
-
 function ActiveCategory(props)
 {
   return (
