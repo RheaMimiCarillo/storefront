@@ -37,8 +37,8 @@ function Hero()
           spacing={ 2 }
           justifyContent="center"
         >
-          <Button variant="contained">It's not a pyramid-scheme</Button>
-          <Button variant="outlined">I Swear!</Button>
+          <Button disabled={true} variant="contained">It's not a pyramid-scheme</Button>
+          <Button disabled={true} variant="outlined">I Swear!</Button>
         </Stack>
       </Container>
     </Box>
