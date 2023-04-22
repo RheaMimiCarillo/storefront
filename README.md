@@ -2,7 +2,7 @@
 
 e-Commerce storefront using React with Redux, coupled with a live API server and Material UI.
 
-![Storefront Screenshot](../public/images/virtual_storefront_screenshot.png "Storefront Screenshot")
+![Storefront Screenshot](./public/images/virtual_storefront_screenshot.png "Storefront Screenshot")
 
 ## Deployment
 
