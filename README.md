@@ -28,7 +28,8 @@ Navigate to your local directory and install dependencies:
 
 ## Usage
 
-Select a `category` from the categories menu to render a list of `products` that match your selected category.
+Select from each `category` filter relevant `products`.
+Change the theme from `light` to `dark` mode with a click of a button.
 
 ## Testing
 
