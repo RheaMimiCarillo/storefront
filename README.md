@@ -4,7 +4,7 @@ e-Commerce storefront using React with Redux, coupled with a live API server and
 
 ## Deployment
 
-[Browse My Wares Here](https://rhea-virtual-storefront.netlify.app)
+[Browse Lies, Pies, and Spy Wares](https://rhea-virtual-storefront.netlify.app)
 
 ## Documentation
 
